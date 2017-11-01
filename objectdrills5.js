@@ -25,9 +25,14 @@ const employees = [
     } 
     ];
     
-    for (let i = 0; i < employees.length - 1; i++) {
+    for (let i = 0; i < employees.length; i++) {
         let current = employees[i];
-        console.log(current.job, current.name + ' reports to ' + current.boss);
-        
+        if (current.boss) {
+        console.log(current.job, current.name + ' reports to ' + current.boss); 
+        } else {
+        console.log(current.job, current.name + ' reports to nobody.');
+        }
     }
-    console.log(employees[4].job, employees[4].name + ' reports to nobody.');
+
+    
+    
