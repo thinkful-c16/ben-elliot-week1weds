@@ -8,7 +8,7 @@ function createMyObject() {
         }
     };
     }
-console.log(foo);
+
     (function testCreateMyObject() {
         const obj = createMyObject();
         if (typeof obj !== 'object') { 
